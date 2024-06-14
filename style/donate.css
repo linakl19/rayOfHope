@@ -155,7 +155,7 @@ footer{
     border: 1px solid red;
 }
 
-.col-3, .col-9 {
+.col-3, .col-9, .col-12 {
     border: 1px solid blue;
 }
 
@@ -165,10 +165,11 @@ footer{
         font-size: 25px;
         font-weight: bold;
         color: var(--color-green);
+        padding-bottom: 10px;
     }
 
     #video-text p{
-        font-size: 15px;
+        font-size: 20px;
         color: var(--color-green);
     }
 
@@ -176,6 +177,34 @@ footer{
 
     }
     
+}
+
+#digital-wallet {
+    /* padding: 10px; */
+    div{
+        border:1px solid blue;
+    }
+    #digital-wallet-instructions{
+        background: var(--bg-light-gradient);
+        p{
+            color: var(--color-green);
+            font-size: 20px;
+            padding: 10px 0;
+
+        }
+    }
+    #digital-wallet-button{
+        height:30px;
+        padding-bottom: 30px;
+        button {
+            background: darkgreen;
+            color: #F2E8CF;
+            border: none;
+            padding: 5px 20px;
+        }
+    }
+
+
 }
 
 
