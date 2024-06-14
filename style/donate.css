@@ -60,10 +60,6 @@ body{
 
 }
 
-main{
-    height: 600px;
-}
-
 /* Header */
 .nav{
     box-sizing: border-box;
@@ -151,6 +147,12 @@ footer{
 
 /* Main Code start */
 
+.row > * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 .row {
     border: 1px solid red;
 }
@@ -159,47 +161,51 @@ footer{
     border: 1px solid blue;
 }
 
-#videoRow {
-    padding: 20px 10px;
-    #video-text h1{
-        font-size: 30px;
-        font-weight: bold;
-        color: var(--color-green);
-        padding-bottom: 10px;
-    }
+#video {
+    #video-text{
+        align-items: center;
 
-    #video-text p{
-        font-size: 20px;
-        color: var(--color-green);
-    }
+        #video-text-top {
+            height: 100%;   
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--color-green);
+            /* margin-bottom: 50px; */
+        }
+        #video-text-bottom{
+            font-size: 20px;
+            color: var(--color-green);
+        }
 
-    #video-content{
     
+    }
+    #video-content iframe{
+        width: 100%;
     } 
 }
 
 #digital-wallet {
-    /* padding: 10px; */
+    padding: 20px 0;
+    background: var(--bg-light-gradient);
+    border-radius: 15px;
     div{
         border:1px solid blue;
     }
     #digital-wallet-instructions{
-        background: var(--bg-light-gradient);
         p{
             color: var(--color-green);
             font-size: 20px;
-            padding: 10px 0;
-
+            /* padding: 10px 0; */
         }
     }
     #digital-wallet-button{
         height:30px;
-        padding-bottom: 50px;
         button {
             background: #386641;
             color: #F2E8CF;
             border: none;
-            padding: 5px 20px;
+            padding: 5px 30px;
+            font-weight: bold;
         }
     }
 }
@@ -208,16 +214,36 @@ footer{
     .frequencyButton{
         border: 1px solid #386641;
         color: var(--color-green);
-        border-radius: 5px;
+        border-radius: 10px;
         font-weight: bold;
         font-size: 30px;
         height: 50px;
         margin: 50px 5px;
+        padding-top: 7px;
     }
 
 }
 
+#donation{
+    .col-4, .col-6{
+        border: 1px solid black;
+    }
+    #next{
+        #next-button{
+            border: none;
+            background: #386641;
+            color: white;
+            width: 100%;
+    
+        }
+    
+    }
 
+}
+
+#blankRow{
+    height: 100px;
+}
 
 
 

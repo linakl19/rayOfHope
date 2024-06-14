@@ -29,11 +29,11 @@
     </header>
 
     <main class="container-fluid">
-      <div class="row text-center align-items-center" id="videoRow">
+      <div class="row text-center" id="video">
         <div class="col-3" id="video-text">
           <div>
-            <h1>These girls will grow a new tomorrow.</h1>
-            <p>
+            <p id="video-text-top">These girls will grow a new tomorrow.</p>
+            <p id="video-text-bottom">
               All girls deserve an education. Your support keeps our
               Kindergarten-6th grade girls learning, growing and full of hope.
             </p>
@@ -43,11 +43,15 @@
         <div class="col-9" id="video-content">
           <div class="videoInsert">
             <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dX6C-S1656A?si=6K3h0GlOrly8CKRA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
           <!-- end of video-content col -->
         </div>
@@ -62,12 +66,29 @@
             </p>
           </div>
           <div id="digital-wallet-button">
-            <button>Donate with digital wallet ></button>
+            <button>Donate with digital wallet</button>
           </div>
           <!-- end of digital-wallet row-->
         </div>
       </div>
+      
       <div class="row" id="donationFrequnecy">
+        <div class="col"></div>
+        <div class="col-2 frequencyButton d-flex justify-content-center">
+          <p>One Time</p>
+        </div>
+        <div class="col-2 frequencyButton d-flex justify-content-center">
+          <p>Monthly</p>
+        </div>
+
+        <div class="col-2 frequencyButton d-flex d-flex justify-content-center">
+          <p>Annually</p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+
+      <!-- <div class="row" id="donationFrequnecy">
         <div class="col"></div>
         <div class="col-2 frequencyButton d-flex align-items-center">
           <p>One time</p>
@@ -80,10 +101,12 @@
           <p>Annually</p>
         </div>
         <div class="col"></div>
-      </div>
-      <div class="row" id="donation-amount">
+      </div> -->
+
+
+      <div class="row" id="donation">
         <div class="col"></div>
-        <div class="col-10">
+        <div class="col-8">
           <div class="row">
             <div class="col-4 donation-amount-option d-flex align-items-center">
               <p>$50</p>
@@ -91,7 +114,7 @@
             <div class="col-4 donation-amount-option d-flex align-items-center">
               <p>$100</p>
             </div>
-    
+
             <div class="col-4 donation-amount-option d-flex align-items-center">
               <p>$200</p>
             </div>
@@ -107,14 +130,26 @@
             <!-- end of second row of donation-amount options -->
           </div>
           <div class="row">
-
+            <div class="col-12 text-center">
+              <div>
+                <p>$USD Custom Amount</p>
+              </div>
+            </div>
+            <!-- end of third row of donation-amount options -->
           </div>
-
+          <div class="row" id="next">
+            <div class="col-12 text-center">
+              <div>
+                <button id="next-button">Next</button>
+              </div>
+            </div>
+          </div>
         </div>
-        
         <div class="col"></div>
       </div>
-          
+      <div class="row" id="blankRow"></div>
+
+
     </main>
 
     <footer>
