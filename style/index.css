@@ -57,6 +57,10 @@ body{
 
 }
 
+main{
+    height: 600px;
+}
+
 /* Header */
 .nav{
     box-sizing: border-box;
@@ -92,4 +96,21 @@ body{
     padding-bottom: 2px;
     font-size: 1.08rem;
     transform: scale(1.03);
+}
+
+/* Footer */
+footer{
+    padding: 1rem 5rem;
+    color: var(--color-green);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info{
+    font-size: smaller;
+}
+.contact-info p{
+    padding: 0.25rem;
 }
