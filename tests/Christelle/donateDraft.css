@@ -154,13 +154,13 @@ footer{
 
 /* delete start */
 
-/* .row {
+.row {
     border: 1px solid red;
-} */
+}
 
-/* .col-2, .col-3, .col-9, .col-12 {
+.col-2, .col-3, .col-9, .col-12 {
     border: 1px solid blue;
-} */
+}
 /* delete end */
 
 #video {
@@ -193,9 +193,9 @@ footer{
     border-radius: 15px;
     margin-left: 25px;
     margin-right: 25px;
-    /* div{
+    div{
         border:1px solid blue;
-    } */
+    }
     #digital-wallet-instructions{
         p{
             color: var(--color-green);
@@ -234,9 +234,9 @@ footer{
 }
 
 #donation{
-    /* .col-4, .col-6{
+    .col-4, .col-6{
         border: 1px solid black;
-    } */
+    }
     .donation-amount-option{
         border: 1px solid #386641;
         color: var(--color-green);
