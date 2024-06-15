@@ -256,9 +256,9 @@ footer{
         border: 1px solid #386641;
         color: var(--color-green);
         font-weight: bold;
-        font-size: 50px;
+        font-size: 40px;
         height: 75px;
-        padding-top: 12.5px;
+        padding-top: 5px;
         margin-bottom: 25px;
         text-align:center;
     }
