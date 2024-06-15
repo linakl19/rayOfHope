@@ -29,9 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    width: 100%;
 	line-height: 1;
-    /* min-width: 685px; */
+    min-width: 685px;
 }
 ol, ul {
 	list-style: none;
@@ -48,7 +47,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body{
+    width: 100%;
+}
 
 /* Variables */
 :root{
@@ -87,7 +88,7 @@ main{
 #nav-menu li{
     transition: 1s ease;
     margin: 0 20px;
-    /* margin: 0 auto; */
+    
 }
 
 #nav-menu li:hover{
@@ -134,7 +135,7 @@ footer{
 }
 .authors{
     border-top: 3px solid var(--color-green);
-    margin: 20px auto;
+    margin: 10px 200px 0 200px;
     padding-top: 10px;
 }
 .authors p{
