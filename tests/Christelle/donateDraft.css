@@ -259,6 +259,7 @@ footer{
         height: 75px;
         padding-top: 12.5px;
         margin-bottom: 25px;
+        text-align:center;
     }
 
 
@@ -271,6 +272,9 @@ footer{
             font-weight: bold;
             height: 75px;
             width: 100%;
+        }
+        #next-button:hover{
+            opacity: 0.8;
         }
     }
 }
