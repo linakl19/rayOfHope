@@ -137,9 +137,7 @@ footer{
     border-top: 3px solid var(--color-green);
     margin: 10px 200px 0 200px;
     padding-top: 10px;
-   
 }
 .authors p{
-    text-align: center;
-    
+    text-align: center;  
 }
