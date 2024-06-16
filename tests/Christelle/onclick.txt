@@ -17,6 +17,8 @@ javascript
 option 1
 
 
+var input = document.getElementById('donation-amount-custom');
+
 // Add event listener for input changes
 input.addEventListener('input', function() {
     // Get the current value of the input field
