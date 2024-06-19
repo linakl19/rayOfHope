@@ -150,7 +150,7 @@ footer{
     width: 100vw;
     height: 70vh;
     padding-top: 100px;
-    background: url(../../static/programs_students.jpg);
+    background: url(../static/programs_students.jpg);
     background-position: left 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,7 +246,7 @@ footer{
 #education__school-title{
     width: 100%;
     height: 25rem;
-    background: url(../../static/programs_zabuliCenter.jpg);
+    background: url(../static/programs_zabuliCenter.jpg);
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
