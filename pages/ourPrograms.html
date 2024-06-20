@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Programs</title>
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- favicon link tag -->
-    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
-    <link rel="stylesheet" href="../style/ourPrograms.css" />
-  </head>
+    <link rel="stylesheet" href="../style/ourPrograms.css">
+    <link rel="stylesheet" href="../style/standard.css">
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="nav">
-        <a id="nav-logo" href="../index.html"
-          ><img src="../static/logo.png" alt="Logo of Ray Of Hope"
-        /></a>
-        <ul id="nav-menu">
-          <li><a href="./aboutUs.html">About Us</a></li>
-          <li><a href="./ourPrograms.html">Our Programs</a></li>
-          <li><a href="./donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="nav">
+            <a id="nav-logo" href="../index.html"><img src="../../static/Logo.jpg" alt="Logo of Ray Of Hope" /></a>
 
+            <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-label="menu"></button>
+
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./ourPrograms.html">Our Programs</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <section id="programs">
-          <div id="programs__title">
-              <h1>Our Programs</h1>
-          </div>
-          <div id="programs__menu">
-              <nav>
-                  <ul>
-                      <li class="programs__menu-item"><a href="#education"> Educational Programs</a></li>
-                      <li class="programs__menu-item"><a href="#">Community Support Programs</a></li>
-                  </ul>
-              </nav>
-          </div>
-      </section>
-      <!-- Educational programs section-->
-      <section id="education">
-          <h2 class="subtitle">Educational Programs</h2>
-          <p>Our program of community-based education provides schooling to girls who might otherwise not become educated. Community-based education is recognized as a best practice and the most practical method to overcoming systemic and cultural barriers to girls’ education.</p>
-          <div id="education__school">
-              <div id="education__school-title">
-                  <h3>Zabuli Education Center</h3>
-              </div>
-              <div id="education__school-paragraph">
-                  <p>The Zabuli Education Center (ZEC) is a private, K-6 school for girls located in the rural village of Deh'Subz, about an hour outside of Kabul. Since 2008, the school has provided free, exemplary education to over 1,000 students along with uniforms, shoes, warm coats, healthy meals, school supplies, clean bathrooms, and safe transportation.​</p>
-                  <p>ZEC students range in age from 4 to 12. Prior to enrollment, students take placement tests to assess academic level, as students of the same age can vary widely in grade level.​</p>
-                  <p>In 2019, the Zabuli Education Center was one of four schools to receive the Ministry’s excellence award from among 140 public and private schools in Kabul Province.</p>
-              </div>
-          </div>
-      </section>
-      <!-- Community Support Programs -->
-      
-  </main>
+        <section id="programs">
+            <div id="programs__title">
+                <h1>Our Programs</h1>
+            </div>
+            <div id="programs__menu">
+                <nav>
+                    <ul>
+                        <li class="programs__menu-item"><a href="#education"> Educational Programs</a></li>
+                        <li class="programs__menu-item"><a href="#">Community Support Programs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Educational programs section-->
+        <section id="education">
+            <h2 class="subtitle">Educational Programs</h2>
+            <p>Our program of community-based education provides schooling to girls who might otherwise not become educated. Community-based education is recognized as a best practice and the most practical method to overcoming systemic and cultural barriers to girls’ education.</p>
+            <div id="education__school">
+                <div id="education__school-title">
+                    <h3>Zabuli Education Center</h3>
+                </div>
+                <div id="education__school-paragraph">
+                    <p>The Zabuli Education Center (ZEC) is a private, K-6 school for girls located in the rural village of Deh'Subz, about an hour outside of Kabul. Since 2008, the school has provided free, exemplary education to over 1,000 students along with uniforms, shoes, warm coats, healthy meals, school supplies, clean bathrooms, and safe transportation.​</p>
+                    <p>ZEC students range in age from 4 to 12. Prior to enrollment, students take placement tests to assess academic level, as students of the same age can vary widely in grade level.​</p>
+                    <p>In 2019, the Zabuli Education Center was one of four schools to receive the Ministry’s excellence award from among 140 public and private schools in Kabul Province.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Community Support Programs -->
+        
+    </main>
 
     <footer>
-      <section class="contact">
-        <div class="contact-subs">
-          <form action="">
-            <label id="subscription-text" for="subscription-email">
-              Subscribe to our mailing list:</label
-            >
-            <br />
-            <input
-              type="email"
-              id="subscription-email"
-              placeholder="Enter your Email"
-              required
-            />
-            <input type="button" id="subs-email" value="SUBSCRIBE" />
-          </form>
-        </div>
-        <div class="contact-info">
-          <p>P.O. BOX 81052, WELLESLEY, MA 02481</p>
-          <p>MOREINFO@RAZIASRAYOFHOPE.ORG</p>
-        </div>
-      </section>
-      <section class="authors">
-        <p>Made by Christelle, Aminata, Lima, and Lina</p>
-        <p>2024</p>
-      </section>
+        <section class="contact">
+            <div class="contact-subscription">
+                <form action="">
+                    <label id="subscription-text" for="subscription-email">
+                        Subscribe to our mailing list:</label>
+                    <br />
+                    <input type="email" id="subscription-email" placeholder="Enter your Email" required />
+                    <button type="submit" id="subs-email">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>P.O. BOX 81052, WELLESLEY, MA 02481</p>
+                <p>MOREINFO@RAZIASRAYOFHOPE.ORG</p>
+            </div>
+        </section>
+        <section class="authors">
+            <p>G{CODE} House</p>
+            <p class="authors__names">© Christelle, Aminata, Lima, and Lina</p>
+            <p>2024</p>
+        </section>
     </footer>
-    <script src="../script/donate.js"></script>
-  </body>
+
+<script src="../script/standard.js"></script>
+</body>
+
 </html>
