@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate</title>
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- favicon link tag -->
-    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
-    <link rel="stylesheet" href="../style/donate.css" />
-    <link rel="stylesheet" href="../style/standard.css">
-  </head>
 
-  <body>
-    <header>
-      <nav class="nav">
-          <a id="nav-logo" href="../index.html"><img src="../static/Logo.jpg" alt="Logo of Ray Of Hope" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate</title>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- favicon link tag -->
+  <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+  <link rel="stylesheet" href="../style/donate.css" />
+  <link rel="stylesheet" href="../style/standard.css">
 
-          <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-label="menu"></button>
+  <!-- Standard script -->
+  <script src="../script/standard.js" defer></script>
+</head>
 
-          <ul id="nav-menu" class="nav-menu">
-              <li><a href="./aboutUs.html">About Us</a></li>
-              <li><a href="./ourPrograms.html">Our Programs</a></li>
-              <li><a href="./donate.html">Donate</a></li>
-          </ul>
-      </nav>
-    </header>
+<body>
+  <header>
+    <nav class="nav">
+      <a id="nav-logo" href="../index.html"><img src="../static/Logo.jpg" alt="Logo of Ray Of Hope" /></a>
 
-    <main class="container-fluid">
-      <section class="row text-center" id="video">
-        <div class="col-lg-3" id="video-text">
-          <div>
-            <p id="video-text-top">These girls will grow a new tomorrow.</p>
-            <p id="video-text-bottom">
-              All girls deserve an education. Your support keeps our
-              Kindergarten-6th grade girls learning, growing and full of hope.
-            </p>
-          </div>
-          <!-- end of video-text col -->
+      <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-label="menu"></button>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./ourPrograms.html">Our Programs</a></li>
+        <li><a href="./donate.html">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container-fluid">
+    <section class="row text-center" id="video">
+      <div class="col-lg-3" id="video-text">
+        <div>
+          <p id="video-text-top">These girls will grow a new tomorrow.</p>
+          <p id="video-text-bottom">
+            All girls deserve an education. Your support keeps our
+            Kindergarten-6th grade girls learning, growing and full of hope.
+          </p>
         </div>
-        <div class="col-lg-9" id="video-content">
-          <div class="video-insert">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/dX6C-S1656A?si=6K3h0GlOrly8CKRA"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <!-- end of video-content col -->
+        <!-- end of video-text col -->
+      </div>
+      <div class="col-lg-9" id="video-content">
+        <div class="video-insert">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dX6C-S1656A?si=6K3h0GlOrly8CKRA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <!-- end of video row -->
-      </section>
-      <section class="row" id="digital-wallet">
-        <div class="col"></div>
-        <div class="col-10 text-center align-items-center">
-          <div id="digital-wallet-instructions">
-            <p>
-              To donate using Apple Pay, G Pay, PayPal or Venmo, Donate with
-              Digital <br />Wallet below.
-            </p>
-          </div>
-          <div id="digital-wallet-button">
-            <button>Donate with Digital Wallet</button>
-          </div>
-          <!-- end of digital-wallet row-->
+        <!-- end of video-content col -->
+      </div>
+      <!-- end of video row -->
+    </section>
+    <section class="row" id="digital-wallet">
+      <div class="col"></div>
+      <div class="col-10 text-center align-items-center">
+        <div id="digital-wallet-instructions">
+          <p>
+            To donate using Apple Pay, G Pay, PayPal or Venmo, Donate with
+            Digital <br />Wallet below.
+          </p>
         </div>
-        <div class="col"></div>
-      </section>
-      
-      <section class="row" id="donation-frequnecy">
-        <div class="col"></div>
-        <div class="col-lg-2 frequency-button d-flex justify-content-center">
-          <p>One Time</p>
+        <div id="digital-wallet-button">
+          <button>Donate with Digital Wallet</button>
         </div>
-        <div class="col-lg-2 frequency-button d-flex justify-content-center">
-          <p>Monthly</p>
-        </div>
+        <!-- end of digital-wallet row-->
+      </div>
+      <div class="col"></div>
+    </section>
 
-        <div class="col-lg-2 frequency-button d-flex d-flex justify-content-center">
-          <p>Annually</p>
-        </div>
-        <div class="col"></div>
-      </section>
+    <section class="row" id="donation-frequnecy">
+      <div class="col"></div>
+      <div class="col-lg-2 frequency-button d-flex justify-content-center">
+        <p>One Time</p>
+      </div>
+      <div class="col-lg-2 frequency-button d-flex justify-content-center">
+        <p>Monthly</p>
+      </div>
+
+      <div class="col-lg-2 frequency-button d-flex d-flex justify-content-center">
+        <p>Annually</p>
+      </div>
+      <div class="col"></div>
+    </section>
 
 
-      <!-- <div class="row" id="donationFrequnecy">
+    <!-- <div class="row" id="donationFrequnecy">
         <div class="col"></div>
         <div class="col-2 frequencyButton d-flex align-items-center">
           <p>One time</p>
@@ -110,60 +104,52 @@
       </div> -->
 
 
-      <section class="row" id="donation">
-        <div class="col"></div>
-        <div class="col-8 text-center">
-          <div class="row">
-            <div class="col-4 donation-amount-option">
-              <p>$50</p>
-            </div>
-            <div class="col-4 donation-amount-option">
-              <p>$100</p>
-            </div>
-
-            <div class="col-4 donation-amount-option">
-              <p>$200</p>
-            </div>
-            <!-- end of first row of donation-amount options -->
+    <section class="row" id="donation">
+      <div class="col"></div>
+      <div class="col-8 text-center">
+        <div class="row">
+          <div class="col-4 donation-amount-option">
+            <p>$50</p>
           </div>
-          <div class="row">
-            <div class="col-6 donation-amount-option">
-              <p>$250</p>
-            </div>
-            <div class="col-6 donation-amount-option">
-              <p>$300</p>
-            </div>
-            <!-- end of second row of donation-amount options -->
+          <div class="col-4 donation-amount-option">
+            <p>$100</p>
           </div>
 
+          <div class="col-4 donation-amount-option">
+            <p>$200</p>
+          </div>
+          <!-- end of first row of donation-amount options -->
+        </div>
+        <div class="row">
+          <div class="col-6 donation-amount-option">
+            <p>$250</p>
+          </div>
+          <div class="col-6 donation-amount-option">
+            <p>$300</p>
+          </div>
+          <!-- end of second row of donation-amount options -->
+        </div>
 
-          <!-- submit option 1 -->
 
-          <form action="">
-            <div class="row">
+        <!-- submit option 1 -->
+
+        <form action="">
+          <div class="row">
+            <div class="col-12 text-center">
+              <label id="donation-amount-submission" for="donation-amount-custom"></label>
+              <input type="text" id="donation-amount-custom" placeholder="$USD Custom Amount" style="width:100%;" />
+            </div>
+            <div class="row" id="next" style="position:relative; left:12px;">
               <div class="col-12 text-center">
-                <label
-                  id="donation-amount-submission"
-                  for="donation-amount-custom"
-                ></label>
-                <input
-                  type="text"
-                  id="donation-amount-custom"
-                  placeholder="$USD Custom Amount"
-                  style="width:100%;"
-                />
+                <input type="button" id="next-button" value="Next >" />
               </div>
-              <div class="row" id="next" style="position:relative; left:12px;">
-                <div class="col-12 text-center">
-                  <input type="button" id="next-button" value="Next >"/>
-                </div>
-              </div>
-            </form>
-            <!-- end of third row of donation-amount options -->
-          </div>
+            </div>
+        </form>
+        <!-- end of third row of donation-amount options -->
+      </div>
 
-          <!-- submit option 2 -->
-          <!-- <div class="row">
+      <!-- submit option 2 -->
+      <!-- <div class="row">
             <div class="col-12 text-center" id="donation-amount-custom">
               <div>
                 <p>$USD Custom Amount</p>
@@ -179,42 +165,38 @@
             </div>
           </div> -->
 
-        </div>
-        <div class="col"></div>
-      </section>
+      </div>
+      <div class="col"></div>
+    </section>
 
-      <section class="row" id="blankRow"></section>
+    <section class="row" id="blankRow"></section>
 
 
-    </main>
+  </main>
 
-    <footer>
-      <section class="contact">
-        <div class="contact-subs">
-          <form action="">
-            <label id="subscription-text" for="subscription-email">
-              Subscribe to our mailing list:</label
-            >
-            <br />
-            <input
-              type="email"
-              id="subscription-email"
-              placeholder="Enter your Email"
-              required
-            />
-            <input type="button" id="subs-email" value="SUBSCRIBE" />
-          </form>
-        </div>
-        <div class="contact-info">
-          <p>P.O. BOX 81052, WELLESLEY, MA 02481</p>
-          <p>MOREINFO@RAZIASRAYOFHOPE.ORG</p>
-        </div>
-      </section>
-      <section class="authors">
-        <p>Made by Christelle, Aminata, Lima, and Lina</p>
-        <p>2024</p>
-      </section>
-    </footer>
-    <script src="../script/donate.js"></script>
-  </body>
+  <footer>
+    <section class="contact">
+      <div class="contact-subscription">
+        <form action="">
+          <label id="subscription-text" for="subscription-email">
+            Subscribe to our mailing list:</label>
+          <br />
+          <input type="email" id="subscription-email" placeholder="Enter your Email" required />
+          <button type="submit" id="subs-email">SUBSCRIBE</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <p>P.O. BOX 81052, WELLESLEY, MA 02481</p>
+        <p>MOREINFO@RAZIASRAYOFHOPE.ORG</p>
+      </div>
+    </section>
+    <section class="authors">
+      <p>G{CODE} House</p>
+      <p class="authors__names">© Christelle, Aminata, Lima, and Lina</p>
+      <p>2024</p>
+    </section>
+  </footer>
+  <script src="../script/donate.js"></script>
+</body>
+
 </html>
