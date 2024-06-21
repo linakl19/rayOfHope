@@ -48,6 +48,7 @@ table {
 	border-spacing: 0;
 }
 body{
+    height: 100vh;
     width: 100%;
 }
 
@@ -58,9 +59,9 @@ body{
     --color-brown: #7F4F24;
 }
 
-main{
+/* main{
     height: 600px;
-}
+} */
 
 /* Header */
 .nav{
@@ -99,6 +100,131 @@ main{
     transform: scale(1.03);
 }
 
+/* main slide show */
+.glide__slide>img{
+    width: 100%;
+    height: 450px;
+} 
+
+.banner_text{
+    width: 100%;
+    height: 80px;
+    background: #828D70;
+    color: #FFFFFF;
+   
+}
+
+.banner_text p{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* initiative section */
+
+.initiative{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    
+.initiative_text{
+    width: 80%; 
+    height: 40px;
+    text-align: center; 
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.initiative_text h2{
+    font-weight: bold;
+    color: var(--color-green);
+}
+
+.initiative_text p{
+    color: var(--color-green);
+}
+
+.initiative_items{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.initiative_items .items{
+    width: 30%;
+    margin: 10px 20px;
+} 
+
+.items *{
+    margin: 10px 0;
+}
+
+.items img{
+    border-radius: 10px;
+}
+.items button{
+    background-color: #F2E8CF;
+    border: solid 2px var(--color-green);
+    border-radius: 5px;
+    padding: 6px;
+    width: 120px;
+}
+
+.items button:hover{
+    background-color: var(--color-green);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    width: 120px;
+}
+
+/* donate video section */
+ /* .donate_item{
+    text-align: center;
+ }
+.donate_item p{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.donate_item a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000000;
+    background-color: #D9D9D9;
+    font-size: 24px;
+    padding: 14px 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.donate_content{
+    position: relative;
+}
+
+.back_video{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: #386641;
+    z-index: -1;
+}
+.donate_item{
+    position: absolute;
+    background-color: #7F4F24;
+
+    width: 500px;
+}
+ */
+
+ 
 /* Footer */
 footer{
     padding: 1rem 5rem;
