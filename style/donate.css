@@ -84,6 +84,7 @@
     .frequency-button:hover{
         background: var(--color-green);
         color: white;
+        cursor: pointer;
     }
 
 }
@@ -104,6 +105,7 @@
     .donation-amount-option:hover{
         background: var(--color-green);
         color: white;
+        cursor: pointer;
     }
 
     #donation-amount-custom{
