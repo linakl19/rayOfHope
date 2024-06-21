@@ -99,11 +99,224 @@ main{
     transform: scale(1.03);
 }
 
+/* start of css for about page mission statement code */
+
+.mission {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mission_img {
+    display:flex;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom:20px; 
+} 
+
+.mission_img img {
+    max-width: 600px;
+    max-height: auto;
+
+}
+
+.mission_content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mission_heading {
+    font-size: 30px;
+    color: #386641;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0 20px 0;
+
+}
+
+
+#mission_paragraph {
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* max-width: 600px; */
+    
+}
+
+
+/* green block code css */
+
+.green_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #386641;
+    color: #F2E8CF;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+
+
+}
+
+/* Our Story Code */
+
+.ourstory {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+#ourstory_heading {
+    font-size: 30px;
+    color:#386641;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ourstory_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ourstory_grid img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#ourstoryimg1 {
+    border-radius: 0 100px 0 100px;
+    box-shadow: 10px 10px 10px 5px#386641;
+}
+
+#ourstoryimg2 {
+    border-radius: 100px 0 100px 0;
+    box-shadow: 10px 10px 10px 5px#386641;
+}
+
+#ourstoryimg3 {
+    border-radius: 100px 0 100px 0;
+    box-shadow: 10px 10px 10px 5px#386641;
+}
+
+#ourstoryimg4 {
+    border-radius: 0 100px 0 100px;
+    box-shadow: 10px 10px 10px 5px#386641;
+}
+
+.ourstory_text {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    max-width: 800px;
+    font-size: 20px;;
+
+}
+
+/* Razia Jan Code */
+
+.razia_jan {
+    display: flex;
+}
+
+
+
+.green_block2 {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    background-color: #386641;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.green_block2 h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+    color: #F2E8CF;
+    
+
+}
+
+.tan_block {
+    background-color: #F2E8CF;
+    display:flex;
+    align-items: center;
+    max-width: auto;
+    
+}
+
+#razia_img {
+    flex-shrink: 0;
+    width: auto;
+    height: 400px;
+}
+
+.tan_text {
+    flex: 1;
+    margin-left: 75px;
+    margin-right: 75px;
+    max-width: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #386641;
+    font-size: 18px;
+}
+
+.final_img img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 footer{
     padding: 1rem 5rem;
     color: var(--color-green);
     background: var(--bg-light-gradient);
+    /* width: 100%;
+    bottom: 0;
+    position: absolute; */
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 .contact{
