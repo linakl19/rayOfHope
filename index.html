@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,22 +8,91 @@
     <!-- favicon link tag -->
     <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   </head>
   <body>
     <header>
       <nav class="nav">
-          <a id="nav-logo" href="../index.html"><img src="../static/Logo.jpg" alt="Logo of Ray Of Hope" /></a>
-
-          <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-label="menu"></button>
-
-          <ul id="nav-menu" class="nav-menu">
-              <li><a href="../pages/aboutUs.html">About Us</a></li>
-              <li><a href="../pages/ourPrograms.html">Our Programs</a></li>
-              <li><a href="../pages/donate.html">Donate</a></li>
-          </ul>
+        <a id="nav-logo" href="./index.html"
+          ><img src="./static/logo.png" alt="Logo of Ray Of Hope"
+        /></a>
+        <ul id="nav-menu">
+          <li><a href="./pages/aboutUs.html">About Us</a></li>
+          <li><a href="./pages/ourPrograms.html">Our Programs</a></li>
+          <li><a href="./pages/donate.html">Donate</a></li>
+        </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              
+              <li class="glide__slide"><img  src="./static/programs_main.jpg" alt=""></li>
+              <li class="glide__slide"><img  src="./static/programs_library.jpg" alt=""></li>
+               <li class="glide__slide"><img src="./static/programs_clothing.jpg" alt=""></li>
+            </ul>
+          </div>
+          
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
+        </div>
+        <div class="banner_text">
+            <p>Razia’s Ray of Hope Foundation is a non-profit organization that provides Afghan girls nurturing, inspiring educational environments and essential resources and services to girls, women and their families.</p>
+            
+        </div>
+      </div>
+
+      <section class="initiative">
+        <div class="initiative_text">
+          <h2>Current Initiatives</h2>
+          <p>Educating Girls, Removing Barriers to Education, and Providing Humanitarian Aid</p>
+        </div>
+        <div class="initiative_items">
+          <div class="items">
+            <img src="./static\home\home_enrollment-expansion.png" alt="">
+            <h3>Enrollment Expansion</h3>
+            <p> The Enrollment Expansion program has added additional classes at all K-6th grade levels. RRH&rsquo;s enrollment in grades K-6 has increased 60% since the Taliban&rsquo;s return in 2021, and the wait list continues to grow.</p>
+            <button>Learn More -></button>
+          </div>
+          <div class="items">
+            <img src="./static/home/home_nutrition-program.png" alt="">
+            <h3>Nutrition Program</h3>
+            <p>Afghanistan is experiencing one of the worst food crises in the world. RRH&rsquo;s Nutrition Program provides meals and snacks to girls in school, take-home food staples and cooking supplies.</p>
+            <button>Learn More -></button>
+          </div>
+          <div class="items">
+            <img src="./static/home/home_menstrual-hygiene-health.png" alt="">
+            <h3>Menstrual & Hygiene Health</h3>
+            <p> RRH&rsquo;s Menstrual Health and Hygiene Program distributes hygiene essentials to over 2,000 girls and women, with provisions of menstrual products, laundry and body soap, shampoo, and new underwear.</p>
+            <button>Learn More -></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="donate_content">
+          <!-- <video preload="auto" muted="" loop="" tabindex="-1" autoplay="" src="https://video.wixstatic.com/video/864a67_0b4226bc6a8a4333aaa9e19e5563294e/1080p/mp4/file.mp4"></video> -->
+        <div class="back_video">
+          <video autoplay loop muted plays-inline>
+            <!-- <source src="https://video.wixstatic.com/video/864a67_0b4226bc6a8a4333aaa9e19e5563294e/1080p/mp4/file.mp4" type="video/mp4" style="height: 20px;"> -->
+        </video>
+        </div>
+        <div class="donate_item">
+          <p>Educating Afghan girls is the best hope for a better, brighter future for Afghanistan and our world.</p>
+          <p>Your donations make it possible.</p>
+          <a href="">DONATE</a>
+        </div>
+      </div>
+    </main>
+
+
     <footer>
       <section class="contact">
         <div class="contact-subs">
