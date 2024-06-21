@@ -55,7 +55,7 @@ body{
 :root{
     --bg-light-gradient: linear-gradient(0deg, rgba(254,254,253,1) 0%, rgba(242,232,207,1) 100%);
     --color-green: #386641;
-
+    --color-brown: #7F4F24;
 }
 
 main{

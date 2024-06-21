@@ -1,5 +1,23 @@
+var input = document.getElementById('donation-amount-custom');
+
+// Add event listener for input changes
+input.addEventListener('input', function() {
+    // Get the current value of the input field
+    var value = input.value;
+    
+    // Check if the value already starts with a dollar sign
+    if (!value.startsWith('$')) {
+        // Prepend a dollar sign to the input value
+        input.value = '$' + value;
+    }
+});
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-    const input = document.getElementById("donation-amount-custom");
+    const input = document.getElementById("dollarInput");
 
     input.addEventListener("input", function(e) {
         // Get the input value
@@ -11,17 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // If the first character is not a dollar sign, add it
         if (!value.startsWith('$')) {
             value = '$' + value;
-        }
-
-        // Limits 2 decimal places after "." to display cents
-        if (value.includes(".")) {
-            // step 1: searches for "." charcter
-            let char = ".";
-            charIndex = value.indexOf(char);
-            // step 2: limit 2 indexes after, factors in the initial "$" character
-            let maxIndex = charIndex + 3
-            // value.maxLength = charIndex + 2;
-            value = value.slice(0, maxIndex);
         }
 
         // Set the cleaned value back to the input field
