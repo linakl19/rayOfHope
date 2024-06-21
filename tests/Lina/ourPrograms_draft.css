@@ -69,10 +69,21 @@
         ". education__school .";
 }
 .subtitle{
+    text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-green);
+}
+.subParagraph{
+    text-align: center;
+    color: var(--color-green);
+    padding: 0.5rem 15%;
+    margin-bottom: 2rem;
+}
+main p{
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
 
 #education>h2{
@@ -81,15 +92,8 @@
 }
 #education>p{
     grid-area: education__paragraph;
-    text-align: center;
-    color: var(--color-green);
-    padding: 0.5rem 15%;
-    margin-bottom: 2rem;
 }
-#education p{
-    font-size: 1.3rem;
-    line-height: 1.5;
-}
+
 #education__school{
     grid-area: education__school;
     padding-bottom: 1rem;
@@ -182,7 +186,7 @@
     #education{
         grid-template-columns: 5% 90% 5%;
     }
-    #education p{
+    main p{
         font-size: 1.2rem;
     }
     #education__school-title{
@@ -230,7 +234,7 @@
     .subtitle{
         font-size: 1.5rem;
     }
-    #education p{
+    #main p{
         font-size: 1.1rem;
     }
     #education__school-title h3{
