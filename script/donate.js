@@ -47,3 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+const button = document.getElementById("next-button");
+
+button.addEventListener("click", showMessage);
+function showMessage() {
+    alert("Thanks for Donating!");
+}
