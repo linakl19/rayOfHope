@@ -90,7 +90,7 @@
 }
 .initiative_items .items{
     /* width: 30%; */
-    margin: 10px 20px;
+    margin: 0 10px;
 } 
 
 .items *{
