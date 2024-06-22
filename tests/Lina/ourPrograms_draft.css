@@ -16,7 +16,7 @@
     padding: 0.75rem 1.5rem;
     color: var(--color-green);
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     background-color: rgba(240, 248, 255, 0.796);
     border-top: 2px solid var(--color-green);
     border-right: 2px solid var(--color-green);
@@ -227,7 +227,9 @@ main p{
 .community-info-paragraph{
     font-size: 1rem;
 }
+
 /* Community Support Programs Code End */
+
 
 @media only screen and (max-width: 1024px){
     #programs__title{
@@ -246,6 +248,34 @@ main p{
     /* Educational Programs Code Start */
     #education>p{
         padding: 0.5rem 5%;
+    }
+
+    /* Community Support Programs Code Start */
+    .program__container{
+        grid-template-columns: 7.5% 85% 7.5%;
+    }   
+    #community>p{
+        padding: 0.5rem 5%;
+    }
+    #community__programs{
+        margin: 0 0 1rem 0;
+        gap: .7rem;
+    }
+    .programs-Nav-li{
+        line-height: 1.6;
+    }
+    #community__programs-info-div{
+        height: 27rem;
+    }
+    .community-info{
+        padding: 8%;
+    }
+    .community-info-title{
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+    .community-info-paragraph{
+        font-size: .95rem;
     }
 
 }
@@ -283,9 +313,41 @@ main p{
     #education__school-paragraph{
         padding: 1.5rem 0;
     }
+
+    /* Community Support Programs Code Start */
+    #community__programs-info-div{
+        grid-template-columns: none;
+        grid-template-rows: auto 60%;
+        grid-template-areas: 
+            'image'
+            'info';
+    } 
+    .community-img{
+        grid-area: image;
+        width: 100%;
+        grid-row: 1/3;
+        border-radius: 17px;
+        box-sizing: border-box;
+    }
+    .community-info{
+        grid-area: info;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom-left-radius: 17px;
+        border-bottom-right-radius: 17px;
+        background: linear-gradient(0deg, rgba(242,232,207,1) 0%, rgba(254,254,253,0.8) 100%);
+    }
+    .community-info-paragraph{
+        font-weight: 430;
+    }
 }
 
 @media only screen and (max-width: 576px){
+    .subParagraph{
+        margin-bottom: .5rem;
+    }
     #programs__title{
         height: 30vh;
     }
@@ -326,4 +388,22 @@ main p{
         padding: 0.75rem 1rem;
     }
 
+    /* Community Support Programs Code Start */
+    #community__programs{
+        grid-template-columns: none;
+        grid-template-areas: 
+            'community-nav' 
+            'community-info';
+    }
+    #community__programs-Nav{
+        align-self: start;
+        justify-self: center;
+    }
+    .programs-Nav-li {
+        margin-bottom: 1.1rem;
+        text-align: center;
+    }
+    .programs-Nav-li a{
+        border-bottom: 1px solid var(--color-green);
+    }
 }
