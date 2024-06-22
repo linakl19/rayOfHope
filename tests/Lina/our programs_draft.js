@@ -30,70 +30,89 @@ const communityPrograms = {
         text: "Afghanistan’s 7-12th grade girls are banned from the classroom. Our Mobile Library delivers books to out-of-school adolescent girls to support ongoing literacy and recreational reading for homebound girls. The Mobile Library serves the literacy of over 600 adolescent girls who would otherwise not have access to books outside of their homes.",
     }
 }
-// Select all anchor tags that link to the community programs info div
+//All anchor tags that link to the community programs info div
 const communityTags = document.querySelectorAll('a[href="#community__programs-info-div"]');
 
-// Function to handle the click event on program links
-const programPressed = (e) => {
-    e.preventDefault();
-    const programId =e.target.id;  // Get ID of Clicked Anchor Tag
-    updateProgramInfo(communityPrograms, programId);
+
+//Event Listener - Community programs anchor tags
+for (let programTag of communityTags) {
+    programTag.addEventListener("click", (e) => {
+        e.preventDefault();
+        const programId =e.target.id; // Get ID of Clicked Anchor Tag
+        updateProgramInfo(communityPrograms, programId);
+        styleTagSelected(programTag);
+    })
 }
 
-//Community programs anchor tags - Event listeners
-communityTags.forEach(programTag => {
-    programTag.addEventListener("click", programPressed);
-});
-
-//Community programs info div - Update content functions 
-const updateProgramInfo = (programs, programId) => {
-    const { title, text, img_Src, img_Alt } = programs[programId];
-    updateProgramTitle(title);
-    updateProgramParagraph(text);
-    updateProgramImg(img_Src, img_Alt);
+// Function to update Community programs info div
+const updateProgramInfo = (obj, programId)=>{
+    updateProgramTitle(obj, programId);
+    updateProgramParagraph(obj, programId);
+    updateProgramImg(obj, programId);
 };
 
-// Update the program title
-const updateProgramTitle = (title) => {
+const updateProgramTitle = (obj, programId) => {
     const programTitle = document.querySelector(".community-info-title");
-    programTitle.innerHTML = title;
-};
-
-// Update the program paragraph
-const updateProgramParagraph = (text) => {
-    const programParagraph = document.querySelector(".community-info-paragraph");
-    programParagraph.innerHTML = text;
-};
-
-// Update the program image
-const updateProgramImg = (src, alt) => {
-    const programImg = document.querySelector(".community-img");
-    programImg.src = src;
-    programImg.alt = alt;
+    programTitle.innerHTML = obj[programId].title;
 }
 
-// for (let programTag of communityTags) {
-//     programTag.addEventListener("click", programPressed);
-// }
+const updateProgramParagraph = (obj, programId) => {
+    const programParagraph = document.querySelector(".community-info-paragraph");
+    programParagraph.innerHTML = obj[programId].text;
+}
 
-// const updateProgramInfo = (obj, programId)=>{
-//     updateProgramTitle(obj, programId);
-//     updateProgramParagraph(obj, programId);
-//     updateProgramImg(obj, programId);
+const updateProgramImg = (obj, programId)=>{
+    const programImg = document.querySelector(".community-img");
+    programImg.src = obj[programId].img_Src;
+    programImg.alt = obj[programId].img_Alt;
+}
+
+// Function to style the clicked anchor tag 
+const styleTagSelected = (programTag) => {
+    // Check if the class that styles the first anchor tag exists. If it exists, it will be removed.
+    document.querySelector(".program-firstSelected")?.classList.remove("program-firstSelected");
+
+    // Check if the class that styles the clicked anchor tag exists. If it exists, it will be removed.
+    // If not, it will be added.
+    document.querySelector(".program-selected")?.classList.remove("program-selected");
+    programTag.classList.add("program-selected");
+
+    // if (document.querySelector(".program-selected")){
+    //     programTag.classList.remove("program-selected");
+    // } else{
+    //     programTag.classList.add("program-selected");
+    //     programTag.classList.remove("program-firstSelected");
+    // }
+}
+
+// communityTags.forEach(programTag => {
+//     programTag.addEventListener("click", programPressed);
+// });
+
+// //Community programs info div - Update content functions 
+// const updateProgramInfo = (programs, programId) => {
+//     const { title, text, img_Src, img_Alt } = programs[programId];
+//     updateProgramTitle(title);
+//     updateProgramParagraph(text);
+//     updateProgramImg(img_Src, img_Alt);
 // };
 
-// const updateProgramTitle = (obj, programId) => {
+// // Update the program title
+// const updateProgramTitle = (title) => {
 //     const programTitle = document.querySelector(".community-info-title");
-//     programTitle.innerHTML = obj[programId].title;
-// }
+//     programTitle.innerHTML = title;
+// };
 
-// const updateProgramParagraph = (obj, programId) => {
+// // Update the program paragraph
+// const updateProgramParagraph = (text) => {
 //     const programParagraph = document.querySelector(".community-info-paragraph");
-//     programParagraph.innerHTML = obj[programId].text;
+//     programParagraph.innerHTML = text;
+// };
+
+// // Update the program image
+// const updateProgramImg = (src, alt) => {
+//     const programImg = document.querySelector(".community-img");
+//     programImg.src = src;
+//     programImg.alt = alt;
 // }
 
-// const updateProgramImg = (obj, programId)=>{
-//     const programImg = document.querySelector(".community-img");
-//     programImg.src = obj[programId].img_Src;
-//     programImg.alt = obj[programId].img_Alt;
-// }
