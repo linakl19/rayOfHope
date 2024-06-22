@@ -64,7 +64,7 @@
             background: #386641;
             color: #F2E8CF;
             border: none;
-            padding: 5px 30px;
+            padding: 10px 30px;
             font-weight: bold;
         }
     }
@@ -84,6 +84,7 @@
     .frequency-button:hover{
         background: var(--color-green);
         color: white;
+        cursor: pointer;
     }
 
 }
@@ -104,13 +105,14 @@
     .donation-amount-option:hover{
         background: var(--color-green);
         color: white;
+        cursor: pointer;
     }
 
     #donation-amount-custom{
         border: 1px solid #386641;
         color: var(--color-green);
         font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
         height: 75px;
         padding-top: 5px;
         margin-bottom: 25px;
