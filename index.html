@@ -22,11 +22,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <!-- Standard script -->
    <script src="./script/standard.js" defer></script>
 </head>
 
 <body>
+  <!-- Start of Header -->
   <header>
     <nav class="nav">
         <a id="nav-logo" href="./index.html"><img src="./static/Logo.jpg" alt="Logo of Ray Of Hope" /></a>
@@ -41,15 +47,20 @@
     </nav>
   </header>
 
+  <!-- End of Header -->
+
+  <!-- Start of Main Section -->
+
   <main>
+    <!-- Start of Slide Show -->
     <div class="container">
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
 
-            <li class="glide__slide"><img src="./static/programs_main.jpg" alt=""></li>
-            <li class="glide__slide"><img src="./static/programs_library.jpg" alt=""></li>
-            <li class="glide__slide"><img src="./static/programs_clothing.jpg" alt=""></li>
+            <li class="glide__slide"><img src="./static\home\home_enrollment-Girls.jpg" alt=""></li>
+            <li class="glide__slide"><img src="./static\home\home_studentsEating.jpg" alt=""></li>
+            <li class="glide__slide"><img src="./static\home\home_studentsInClassroom.jpg" alt=""></li>
           </ul>
         </div>
 
@@ -64,52 +75,116 @@
           educational environments and essential resources and services to girls, women and their families.</p>
 
       </div>
-    </div>
 
+      <div class="social_media">
+        <ul>
+          <li><a href="https://www.facebook.com/RaziasRayofHope/" class="fa fa-facebook"></a></li>
+          <li><a href="https://www.instagram.com/raziasrayofhope/" class="fa fa-instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/razia's-ray-of-hope/" class="fa fa-linkedin"></a></li>
+          <li><a href="https://x.com/raziasrayofhope?mx=2" class="fa fa-twitter"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Slide Show -->
+<!-- Start of Current Initiatives Section -->
     <section class="initiative">
       <div class="initiative_text">
         <h2>Current Initiatives</h2>
         <p>Educating Girls, Removing Barriers to Education, and Providing Humanitarian Aid</p>
       </div>
+      <!-- Start of Enrollment Expansion -->
       <div class="initiative_items">
         <div class="items">
-          <img src="./static\home\home_enrollment-expansion.png" alt="">
-          <h3>Enrollment Expansion</h3>
-          <p> The Enrollment Expansion program has added additional classes at all K-6th grade levels. RRH&rsquo;s
-            enrollment in grades K-6 has increased 60% since the Taliban&rsquo;s return in 2021, and the wait list
-            continues to grow.</p>
-          <button>Learn More -></button>
-        </div>
-        <div class="items">
-          <img src="./static/home/home_nutrition-program.png" alt="">
-          <h3>Nutrition Program</h3>
-          <p>Afghanistan is experiencing one of the worst food crises in the world. RRH&rsquo;s Nutrition Program
-            provides meals and snacks to girls in school, take-home food staples and cooking supplies.</p>
-          <button>Learn More -></button>
-        </div>
-        <div class="items">
-          <img src="./static/home/home_menstrual-hygiene-health.png" alt="">
-          <h3>Menstrual & Hygiene Health</h3>
-          <p> RRH&rsquo;s Menstrual Health and Hygiene Program distributes hygiene essentials to over 2,000 girls and
-            women, with provisions of menstrual products, laundry and body soap, shampoo, and new underwear.</p>
-          <button>Learn More -></button>
-        </div>
-      </div>
-    </section>
+          <div class="initiative_img">
+            <img src="./static\home\enrollment_expansion .png" alt="">
+          </div>
 
-    <div class="donate_content">
-      <!-- <video preload="auto" muted="" loop="" tabindex="-1" autoplay="" src="https://video.wixstatic.com/video/864a67_0b4226bc6a8a4333aaa9e19e5563294e/1080p/mp4/file.mp4"></video> -->
-      <div class="back_video">
-        <video autoplay loop muted plays-inline>
-          <!-- <source src="https://video.wixstatic.com/video/864a67_0b4226bc6a8a4333aaa9e19e5563294e/1080p/mp4/file.mp4" type="video/mp4" style="height: 20px;"> -->
-        </video>
-      </div>
-      <div class="donate_item">
+          <div class="initiative_header">
+            <h3>Enrollment Expansion</h3>
+          </div>
+            
+            <div class="initiative_p">
+              <p> The Enrollment Expansion program has added additional classes at all K-6th grade levels. RRH&rsquo;s
+                enrollment in grades K-6 has increased 60% since the Taliban&rsquo;s return in 2021, and the wait list
+                continues to grow.</p>
+            </div>
+            <div class="initiative_button">
+              <a href="./pages/ourPrograms.html">Learn More -></a>
+            </div>
+          </div>
+          <!-- End of Enrollment Expansion -->
+        <!-- Nutrition Program Start-->
+        <div class="items">
+        <div class="initiative_img">
+          <img src="./static\home\nutrition_program .png" alt="">
+        </div>
+     
+        <div class="initiative_header">
+          <h3>Nutrition Program</h3>
+        </div>
+          
+          <div class="initiative_p">
+            <p> Afghanistan is experiencing one of the worst food crises in the world. RRH&rsquo;s Nutrition Program
+              provides meals and snacks to girls in school, take-home food staples and cooking supplies.</p>
+              </p>
+          </div>
+          <div class="initiative_button">
+            <a href="./pages/ourPrograms.html">Learn More -></a>
+          </div>
+          </div>
+<!-- End of Nutrition Program -->
+ <!-- Start of Menstrual & Hygiene Health -->
+
+ <div class="items">
+  <div class="initiative_img">
+    <img src="./static/home/menstrual_hygiene_health .png" alt="">
+  </div>
+
+  <div class="initiative_header">
+    <h3>Menstrual & Hygiene Health</h3>
+  </div>
+    
+    <div class="initiative_p">
+      <p>RRH&rsquo;s Menstrual Health and Hygiene Program distributes hygiene essentials to over 2,000 girls and
+        women, with provisions of menstrual products, laundry and body soap, shampoo, and new underwear.</p>
+        </p>
+    </div>
+    <div class="initiative_button">
+      <a href="./pages/ourPrograms.html">Learn More -></a>
+    </div>
+  </div>
+  </div>
+</section>
+    <!-- End of Current Initiative Section -->
+
+<!-- Start of Donate Video -->
+<div class="content-before-footer">
+  <div class="video-container">
+      <video controls class="video-element" autoplay loop muted plays-inline>
+          <source src="https://video.wixstatic.com/video/864a67_0b4226bc6a8a4333aaa9e19e5563294e/1080p/mp4/file.mp4" type="video/mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
         <p>Educating Afghan girls is the best hope for a better, brighter future for Afghanistan and our world.</p>
         <p>Your donations make it possible.</p>
-        <a href="">DONATE</a>
+  
+        <a href="./pages/donate.html" class="video-link">DONATE</a>
       </div>
+  </div>
+</div>
+<!-- End of Donate Video -->
+<!-- Start of Founder Section -->
+   <div class="founder">
+    <div class="founder_image">
+      <img src="static\home\founder_image.png" alt="">
     </div>
+    <div class="founder_text">
+      <p>"We will continue to support Afghan girls and their families, no matter what tomorrow brings."</p>
+      <p>Razia Jan, Founder</p>
+    </div>
+   </div> 
+
+<!-- End of Founder Section -->
   </main>
 
   <footer>
