@@ -55,18 +55,14 @@
     }
 }
 
-/* Educational Programs Code Start */
-#education{
+/* Standad Programs Code Start */
+.program__container{
     max-width: 2000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: min-content min-content auto;
     row-gap: 15px;
-    grid-template-areas: 
-        ". education__title ."
-        ". education__paragraph ."
-        ". education__school .";
 }
 .subtitle{
     text-align: center;
@@ -82,10 +78,19 @@
     margin-bottom: 2rem;
 }
 main p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
+/* Standad Programs Code End */
 
+
+/* Educational Programs Code Start */
+#education{
+    grid-template-areas: 
+        ". education__title ."
+        ". education__paragraph ."
+        ". education__school .";
+}
 #education>h2{
     grid-area: education__title;
     justify-self: center;
@@ -93,12 +98,9 @@ main p{
 #education>p{
     grid-area: education__paragraph;
 }
-
 #education__school{
     grid-area: education__school;
     padding-bottom: 1rem;
-    /* border: 2rem solid var(--color-green);
-    border-radius: 20px; */
 }
 #education__school-title{
     width: 100%;
@@ -117,11 +119,6 @@ main p{
     margin-bottom: 2rem;
     transition: 1s;
 }
-/* #education__school-title:hover{
-    border: 2px solid var(--color-brown);
-    transform: scale(1.03);
-} */
-
 #education__school-title h3{
     padding: 0.75rem 2rem;
     color: var(--color-brown);
@@ -132,7 +129,6 @@ main p{
     border-right: 2px solid var(--color-brown);
     border-left: 2px solid var(--color-brown);
 }
-
 #education__school-paragraph{
     padding: 2rem 10%;
     text-align: center;
@@ -144,6 +140,89 @@ main p{
         margin-bottom: 15px;
     }
 }
+
+/* Educational Programs Code End */
+
+/* Community Support Programs Code Start */
+#community{
+    padding-top: 3rem;
+    grid-template-areas: 
+        ". community__title ."
+        ". community__paragraph ."
+        ". community__programs .";
+}
+#community>h2{
+    grid-area: community__title;
+    justify-self: center;
+}
+#community>p{
+    grid-area: community__paragraph;
+}
+#community__programs{
+    grid-area: community__programs;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    grid-template-areas: 
+        'community-nav community-info';
+    margin: 1rem 5%;
+}
+#community__programs-Nav{
+    grid-area: community-nav;
+    align-self: center;
+    justify-self: center;
+}
+.programs-Nav-ul{
+    list-style:disc outside;
+}
+.programs-Nav-li{
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+.programs-Nav-li a{
+    color: var(--color-green);
+    text-decoration: none;
+}
+.programs-Nav-li:hover{
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-green);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+#community__programs-info-div{
+    grid-area: community-info;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid var(--color-green);
+    border-radius: 20px;
+}
+.community-img{
+    width: 100%;
+    height:inherit;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.community-info{
+    padding: 10%;
+    color: var(--color-brown);
+    text-align: center;
+    overflow:scroll;
+}
+.community-info-title{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-brown);
+}
+.community-info-paragraph{
+    font-size: 1rem;
+}
+/* Community Support Programs Code End */
 
 @media only screen and (max-width: 1024px){
     #programs__title{
@@ -183,7 +262,7 @@ main p{
     .subtitle{
         font-size: 1.7rem;
     }
-    #education{
+    .program__container{
         grid-template-columns: 5% 90% 5%;
     }
     main p{
