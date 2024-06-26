@@ -2,11 +2,12 @@
 Razia's Ray of Hope: a group captsone project utilizing the following tech stack:
 
 - JavaScript
-- HTML
-- CSS
+- HTML5
+- CSS3
+- Glide JS Library
+- Font Awesome Icon Library
 - Bootstrap
 - Figma
-- Glide JS Library
 - Git and GitHub
 
 <!-- Contributers -->
